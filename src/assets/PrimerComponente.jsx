@@ -1,5 +1,5 @@
 export const PrimerComponente = () => {
   return (
-    <div>PrimerComponente</div>
+    <h1>Primer Componente</h1>
   )
 }

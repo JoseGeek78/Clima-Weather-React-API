@@ -1,10 +1,15 @@
-import { useState, useEffect } from react;
-import './styles/weatherStyles.css'
+export const WeatherApp = () => {
+  return (
+    <div className="container">
+
+      <h1>Aplicación del clima</h1>
+
+    </div>
+  )
+}
 
 
 
 
 
-    let urlBase = 'https://api.openweathermap.org/data/2.5/weather'
-    let api_key = 'ab466f6ec21f347319f31f3787f5b3f'
-    let difKelvin = 273.15
+    

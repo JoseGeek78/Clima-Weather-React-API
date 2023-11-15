@@ -47,7 +47,7 @@ const [dataClima, setDataClima] = useState(null)
   )
 }
 
-export default WeatherApp
+export default WeatherApp;
 
 
 

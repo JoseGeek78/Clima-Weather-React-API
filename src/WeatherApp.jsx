@@ -1,9 +1,13 @@
 import { useState } from 'react'
+
 export const WeatherApp = () => {
+
+  const urlBase = 'https://api.openweathermap.org/data/3.0/onecall'
+  
 
 
 const [ciudad, setCiudad] = useState('')
-const [dataClima, setdataClima] = useState(null)
+const [dataClima, setDataClima] = useState(null)
   const handleCambioCiudad = (e) => {
    setCiudad(e.target.value)
 }
@@ -13,6 +17,16 @@ const [dataClima, setdataClima] = useState(null)
       if(ciudad.length > 0) fetchClima()
   }
 
+  const fetchClima = async () => {
+    try{
+      
+      const response = await fetch(`${urlBase}?lat=${40.4568}&lon=${-3.4796}&appid=${b4db614ba49fa5f7573dd1a0c0eb3ce8}`)
+      const data = await response.json()
+      setDataClima(data)
+    }catch(error){
+      console.error('Ocurrió el siguiente problema: ', error)
+    }
+  }
 
    return (
 

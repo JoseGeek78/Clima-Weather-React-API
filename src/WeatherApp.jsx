@@ -54,5 +54,10 @@ export const WheatherApp = () => {
   )
 }
 
+export default WeatherApp;
+
+
+
+
 
     
